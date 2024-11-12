@@ -52,5 +52,6 @@ to basically replicate the Dockerfile initial build step using RPMs from EL clon
 the kernel.
 
 
-Forked from [the original repo](https://github.com/hotspoons/NVIDIA-driver-container)
+Forked from [the original repo](https://github.com/hotspoons/NVIDIA-driver-container).
+
 Inspired by [this](https://github.com/awslife/nvidia-driver) (which no longer works).
