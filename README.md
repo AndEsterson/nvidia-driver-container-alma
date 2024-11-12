@@ -51,4 +51,6 @@ operator any time you upgrade the kernel on your GPU hosts. This is a solvable p
 to basically replicate the Dockerfile initial build step using RPMs from EL clone repositories instead of DNF to install
 the kernel.
 
+
+Forked from [the original repo](https://github.com/hotspoons/NVIDIA-driver-container)
 Inspired by [this](https://github.com/awslife/nvidia-driver) (which no longer works).
