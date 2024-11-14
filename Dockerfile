@@ -18,10 +18,10 @@ RUN dnf install -y --best zlib zlib-devel
 #     rpm -i --nodeps ${RPM_BASE_URL}/k/kernel-devel-${KERNEL_VERSION}.rpm && \
 #     rpm -i --nodeps ${RPM_BASE_URL}/l/linux-firmware-20230824-119.git0e048b06.el8_9.noarch.rpm && \
 #     rpm -i --nodeps ${RPM_BASE_URL}/k/kernel-core-${KERNEL_VERSION}.rpm
-RUN rpm -i --nodeps ${RPM_BASE_URL}/e/elfutils-libelf-0.190-2.el9.x86_64.rpm && \
-     rpm -i --nodeps ${RPM_BASE_URL}/k/kernel-devel-${KERNEL_VERSION}.rpm && \
-     rpm -i --nodeps ${RPM_BASE_URL}/l/linux-firmware-20230824-119.git0e048b06.el8_9.noarch.rpm && \
-     rpm -i --nodeps ${RPM_BASE_URL}/k/kernel-core-${KERNEL_VERSION}.rpm
+RUN rpm -i --nodeps ${RPM_BASE_URL}/e/elfutils-libelf-0.190-2.el9.x86_64.rpm
+RUN rpm -i --nodeps ${RPM_BASE_URL}/k/kernel-devel-${KERNEL_VERSION}.rpm
+RUN rpm -i --nodeps ${RPM_BASE_URL}/l/linux-firmware-20230824-119.git0e048b06.el8_9.noarch.rpm
+RUN rpm -i --nodeps ${RPM_BASE_URL}/k/kernel-core-${KERNEL_VERSION}.rpm
 
 
 COPY nvidia-driver /usr/local/bin
