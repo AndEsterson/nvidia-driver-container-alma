@@ -1,6 +1,6 @@
 #!/bin/bash
 KERNEL_VERSION="${KERNEL_VERSION:-$(uname -r)}"
-NVIDIA_DRIVER_VERSION="${NVIDIA_DRIVER_VERSION:-535.104.12}"
+NVIDIA_DRIVER_VERSION="${NVIDIA_DRIVER_VERSION:-560.35.03}"
 CONTAINER_REGISTRY="${CONTAINER_REGISTRY:-ghcr.io}"
 OS_NAME="${OS_NAME:-$(cat /etc/os-release | grep ^ID= | awk -F= '{print $2}' | sed -e 's/^"//' -e 's/"$//')}"
 OS_RELEASE="${OS_RELEASE:-$(cat /etc/os-release | grep VERSION_ID | awk -F= '{print $2}' | sed -e 's/^"//' -e 's/"$//')}"
